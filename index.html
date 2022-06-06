@@ -71,21 +71,21 @@
                                 <div class="form-group">
                                     <label class="form-label" for="user-name">Имя</label>
                                     <input class="form-input" id="user-name" name="user-name" type="text">
-                                    <svg class="form-icons" width="18" height="18" aria-label="Иконка человека">
+                                    <svg class="form-icons" width="12" height="12" aria-label="Иконка человека">
                                         <use href="./images/icons/icons.svg#icon-person"></use>
                                     </svg>
                                 </div>
                                <div class="form-group">
                                     <label class="form-label" for="user-tel">Телефон</label>
                                     <input class="form-input" id="user-tel" name="user-tel" type="tel">
-                                    <svg class="form-icons" width="18" height="18" aria-label="Иконка телефона">
+                                    <svg class="form-icons" width="13" height="13" aria-label="Иконка телефона">
                                         <use href="./images/icons/icons.svg#icon-phone"></use>
                                     </svg>
                                 </div>
                                <div class="form-group">
                                     <label class="form-label" for="user-email">Почта</label>
                                     <input class="form-input" id="user-email" name="user-email" type="email">
-                                    <svg class="form-icons" width="18" height="18" aria-label="Иконка письма">
+                                    <svg class="form-icons" width="15" height="12" aria-label="Иконка письма">
                                         <use href="./images/icons/icons.svg#icon-email-bl"></use>
                                     </svg>
                                 </div>
@@ -94,11 +94,13 @@
                                     <textarea class="user-message" name="user-message" rows="10" placeholder="Введите текст"></textarea>
                                 </div>
                                 <div class="form-checkbox">
-                                    <input class="checkbox" type="checkbox" type="checkbox" name="checkbox" id="checkbox">
                                     <label class="checkbox-label" for="checkbox">
-                                        <svg class="checkbox-icon" width="16" height="15">
-                                            <use href="./images/icons/icons.svg#icon-check"></use>
-                                        </svg>
+                                        <input class="checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox">
+                                        <span class="custom-checkbox">
+                                            <svg class="checkbox-icon" width="16" height="15">
+                                                <use href="./images/icons/icons.svg#icon-check"></use>
+                                            </svg>
+                                        </span>
                                         <span class="checkbox-text">
                                             Соглашаюсь с рассылкой и принимаю <a class="checkbox-link link" href="./">Условия договора</a>
                                         </span>
@@ -398,7 +400,6 @@
                 <address class="address">
                     <ul class="address-list list">
                         <!-- Адрес  -->
-                        <!-- <div></div> -->
                         <li class="address-item link">
                             <a class="address-contacts link"
                                 href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
@@ -452,7 +453,7 @@
             <div class="footer-form">
                 <h3 class="footer-so-text">Подпишитесь на рассылку</h3>
                 <div class="footer-form-wrapper">
-                    <form action="label-footer">
+                    <form action="label-footer" class="label-footer">
                         <input class="footer-input" type="email" name="footer-email" placeholder="E-mail">
                         <button type="submit" class="hero-button main-btn footer-button">
                             <span class="footer-btn-title">Подписаться</span>
