@@ -259,6 +259,7 @@ img {
 .main-btn {
     cursor: pointer;
     text-align: center;
+    transition: box-shadow var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
 }
 
 .hero-button {
