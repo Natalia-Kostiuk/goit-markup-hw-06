@@ -339,8 +339,6 @@ img {
   
 }
 
-
-
 .modal-btn:hover,
 .modal-btn:focus {
   fill: var(--button-bg);
@@ -384,24 +382,26 @@ img {
 .form-input:hover,
 .form-input:focus,
 .user-message:hover,
-.user-message:focus,
-.form-icons:hover,
-.form-icons:focus {
-fill: var(--button-bg);
-border-color: var(--accent-txt);
-outline: transparent;
+.user-message:focus {
+    fill: var(--button-bg);
+    border-color: var(--accent-txt);
+    outline: transparent;
+}
+
+.form-input:hover + .form-icons {
+    fill: var(--button-bg);
 }
 
 .checkbox {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0px;
-padding: 0px;
-clip: rect(0 0 0 0);
-overflow: hidden;
-outline: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    outline: none;
 }
 
 .checkbox-label {
@@ -411,8 +411,8 @@ outline: none;
 }
 
 .checkbox-link {
-outline: none;
-color: var(--accent-txt);
+    outline: none;
+    color: var(--accent-txt);
 }
 
 .form-button {
@@ -432,8 +432,8 @@ opacity: 0;
 transition: opacity var(--transition-duration) var(--transition-timing-function);
 }
 
-.checkbox-icon:hover,
-.checkbox-icon:focus {
+.checkbox:hover,
+.checkbox:focus {
     border-color: var(--button-bg);
 }
 
@@ -452,12 +452,6 @@ transition: opacity var(--transition-duration) var(--transition-timing-function)
 
 .checkbox:checked+.custom-checkbox .checkbox-icon {
     opacity: 1;
-}
-
-.form-input:focus,
-.form-input:hover {
-    border-color: var(--button-bg);
-    outline: none;
 }
 
 .form-title {
@@ -489,12 +483,6 @@ transition: opacity var(--transition-duration) var(--transition-timing-function)
     transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
-.form-label:hover .form-input,
-.form-input:focus,
-.form-label:hover .user-message,
-.user-message:focus {
-    border-color: var(--button-bg);
-}
 
 
 /* Преимущества */
