@@ -465,8 +465,18 @@ transition: opacity var(--transition-duration) var(--transition-timing-function)
 }
 
 
-.checkbox:checked+.custom-checkbox .checkbox-icon {
+.checkbox:checked + .custom-checkbox .checkbox-icon {
     opacity: 1;
+}
+
+.checkbox:focus + .custom-checkbox {
+    outline-color: var (--button-bg);
+}
+
+.checkbox:checked + .custom-checkbox {
+    fill: #FFFFFF;
+    background-color: var (--button-bg);
+    outline: none;
 }
 
 .form-title {
